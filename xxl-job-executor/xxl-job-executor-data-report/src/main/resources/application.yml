@@ -1,0 +1,26 @@
+logging:
+  config: classpath:logback.xml
+server:
+  port: 8081
+xxl:
+  job:
+    accessToken:
+    admin:
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+    executor:
+      ip:
+      address:
+      port: 9999
+      appname: xxl-job-executor-data-report
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: 15
+dubbo:
+  application:
+    name: xxl-job
+  registry:
+    address: zookeeper://192.168.3.138:2181
+  protocol:
+    name: dubbo
+    port: 20881
+  consumer:
+    check: false
