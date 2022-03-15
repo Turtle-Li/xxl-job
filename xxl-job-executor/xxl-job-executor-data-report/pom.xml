@@ -52,6 +52,12 @@
             <version>${project.parent.version}</version>
         </dependency>
 
+        <!-- rpc-data-report -->
+        <dependency>
+            <groupId>com.yicall</groupId>
+            <artifactId>data-repo-api-interface</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
         <!-- dubbo -->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
